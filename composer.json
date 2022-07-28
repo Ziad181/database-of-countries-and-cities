@@ -15,7 +15,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "Ziad181\\DatabaseOfCountriesAndCities\\": "src/"
+      "Ziad181\\DatabaseOfCountriesAndCities\\": "packages/ziad181/database-of-countries-and-cities/src",
+      "App\\": "app/"
     }
   },
   "minimum-stability": "dev"
