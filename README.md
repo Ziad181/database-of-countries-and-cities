@@ -1,68 +1,38 @@
-# wammed-urway  (URWAY Payment Gateway)
-laravel package for urway payment getway
+# Database Of Countries And Cities.
+This package contains a database of all countries and cities in 3 different languages: English, Arabic and French.
 
 
-install the package 
+- Open composer.json file and update include the following array somewhere in the object:
+
+```php
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Ziad181/database-of-countries-and-cities"
+        }
+    ],
+```
+
+- install the package 
 `composer require ziad181/database-of-countries-and-cities`
 
 
-You can publish using the following command
+- You can publish using the following command
 
- `php artisan vendor:publish --provider="Wameed\UrwayPaymentGateway\UrwayServiceProvider"`
+`php artisan vendor:publish --provider="Ziad181\DatabaseOfCountriesAndCities\CountriesServiceProvider"`
 
-When published, the `config/urway.php` config file contains:
+- Export the tables to the database
 
-
-
-```php
-return [
-    'auth' => [
-        'terminal_id' => env('URWAY_TERMINAL_ID'),
-        'password' => env('URWAY_PASSWORD'),
-        'merchant_key' => env('URWAY_MERCHANT_KEY'),
-    ],
-    'url'=>[
-        //change 'payments-dev.urway-tech' to 'payments.urway-tech' when you are ready to go live
-        'base'=>env('URWAY_BASE_URL','https://payments-dev.urway-tech.com'),
-        'payment'=>env('URWAY_PAYMENT_URL','URWAYPGService/transaction/jsonProcess/JSONrequest'),
-    ]
-];
-```
-
-
-send payment data
+`php artisan migrate`
+ 
+- Open the DatabaseSeeder file and add the following code:
 
 ```php
-
-  $urway = new Urway();
-
-  $urway->setTrackId($trackID)
-        ->setAmount($total_after_cal_tax)
-        ->setCurrency('SAR')
-        ->setCountry('SA')
-        ->setAttribute('udf1', 'udf1')
-        ->setPaymentPageLanguage('ar')
-        ->setAttribute('udf4', 'udf4')
-        ->setAttribute('udf5', 'udf5')
-        ->setCustomerEmail($request->email)
-        ->setRedirectUrl(route('user.payment.verify'));
-
-  $response = $urway->pay();
-
-  $payment_url = $response->getPaymentUrl();
+    $this->call([
+            CountrySeeder::class, 
+            CitySeeder::class,
+    ]);
 ```
+- Export data to the database
 
-to veriry the payment 
-
-```php
-        $urway = new Urway();
-
-        $urway->setTrackId(request('TrackId'))
-            ->setAmount(request('amount'))
-            ->setCurrency('SAR');
-
-        $redirect_url = $urway->verify(request('TranId'));
-
-        return $redirect_url->body();
-
-```
+`php artisan db:seed`

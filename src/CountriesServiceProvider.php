@@ -14,8 +14,8 @@ class CountriesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([__DIR__ . '/../database/migrations' => database_path('migrations'),]);
-        $this->publishes([__DIR__ . '/../database/seeders' => database_path('seeders'),]);
+        $this->publishes([__DIR__ . '/database/migrations' => database_path('migrations'),]);
+        $this->publishes([__DIR__ . '/database/seeders' => database_path('seeders'),]);
     }
 
     /**
