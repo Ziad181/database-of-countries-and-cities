@@ -15,8 +15,14 @@
   ],
   "autoload": {
     "psr-4": {
-      "Ziad181\\DatabaseOfCountriesAndCities\\": "packages/ziad181/database-of-countries-and-cities/src",
-      "App\\": "app/"
+      "Ziad181\\DatabaseOfCountriesAndCities\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ziad181\\DatabaseOfCountriesAndCities\\CountriesServiceProvider"
+      ]
     }
   },
   "minimum-stability": "dev"
