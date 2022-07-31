@@ -16,7 +16,7 @@ class CountrySeeder extends Seeder
     {
         $countries = [
 
-            ['id' => '1', 'name_ar' => 'أندورا', 'name_fr' => 'Andorre', 'name_en' => 'Andorra', 'code' => 'ad'],
+            ['id' => '1', 'name_ar' => 'المملكة العربية السعودية', 'name_fr' => 'Arabie Saoudite', 'name_en' => 'Saudi Arabia', 'code' => 'sa'],
 
             ['id' => '2', 'name_ar' => 'الإمارات العربية المتحدة', 'name_fr' => 'Emirats Arabes Unis', 'name_en' => 'United Arab Emirates', 'code' => 'ae'],
 
@@ -368,7 +368,7 @@ class CountrySeeder extends Seeder
 
             ['id' => '177', 'name_ar' => 'رواندا', 'name_fr' => 'Rwanda', 'name_en' => 'Rwanda', 'code' => 'rw'],
 
-            ['id' => '178', 'name_ar' => 'المملكة العربية السعودية', 'name_fr' => 'Arabie Saoudite', 'name_en' => 'Saudi Arabia', 'code' => 'sa'],
+            ['id' => '178', 'name_ar' => 'أندورا', 'name_fr' => 'Andorre', 'name_en' => 'Andorra', 'code' => 'ad'],
 
             ['id' => '179', 'name_ar' => 'جزر سليمان', 'name_fr' => 'Les îles Salomon', 'name_en' => 'Solomon Islands', 'code' => 'sb'],
 
