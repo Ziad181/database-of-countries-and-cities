@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-develop',
-        'version' => 'dev-develop',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '54e73372312206d98e7a2b7a6ef87102a35ed47d',
+        'reference' => 'b7b08815c71d7b3aca2cfc31c377fecf7d1b08d9',
         'name' => 'ziad181/database-of-countries-and-cities',
         'dev' => true,
     ),
@@ -27,7 +27,7 @@
             'aliases' => array(
                 0 => '10.x-dev',
             ),
-            'reference' => 'fc56a71863d6c125df3d3ba36042b5c0a57827ef',
+            'reference' => 'fc2c4ceb785822f1f94b45c52d1a7e92e2db0132',
             'dev_requirement' => false,
         ),
         'illuminate/conditionable' => array(
@@ -38,7 +38,7 @@
             'aliases' => array(
                 0 => '10.x-dev',
             ),
-            'reference' => 'b5845c3a1c2045011a4a066e8b63d5ddf107ad47',
+            'reference' => '0418320648cd9e9d304980b5fb13836dc1b553f2',
             'dev_requirement' => false,
         ),
         'illuminate/contracts' => array(
@@ -49,7 +49,7 @@
             'aliases' => array(
                 0 => '10.x-dev',
             ),
-            'reference' => 'fffaddd47422b6d4885efe71a6c23097bf430cc6',
+            'reference' => 'fd910ef152725025561c4b85f03e6e5ab180f57f',
             'dev_requirement' => false,
         ),
         'illuminate/macroable' => array(
@@ -60,7 +60,7 @@
             'aliases' => array(
                 0 => '10.x-dev',
             ),
-            'reference' => '586a755ed8210e5960ee531511b6d079e0266162',
+            'reference' => '2f310e209b4c708355e86dbab480c2c8fb492538',
             'dev_requirement' => false,
         ),
         'illuminate/support' => array(
@@ -71,7 +71,7 @@
             'aliases' => array(
                 0 => '10.x-dev',
             ),
-            'reference' => '5fc56fcfc566e135db5daf6354929ad8edefbd44',
+            'reference' => 'f841a3e1da9725f275c61ff6fad89ec9c7256474',
             'dev_requirement' => false,
         ),
         'nesbot/carbon' => array(
@@ -82,7 +82,7 @@
             'aliases' => array(
                 0 => '2.x-dev',
             ),
-            'reference' => '00a259ae02b003c563158b54fb6743252b638ea6',
+            'reference' => '01bc4cdefe98ef58d1f9cb31bdbbddddf2a88f7a',
             'dev_requirement' => false,
         ),
         'psr/container' => array(
@@ -135,7 +135,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/translation',
             'aliases' => array(),
-            'reference' => '73ec112b2844d80c9634c5ef3e938b10f1e76585',
+            'reference' => 'dee863694f76b2f867cfebb96ecc5f8701f4af0b',
             'dev_requirement' => false,
         ),
         'symfony/translation-contracts' => array(
@@ -165,12 +165,12 @@
             'dev_requirement' => false,
         ),
         'ziad181/database-of-countries-and-cities' => array(
-            'pretty_version' => 'dev-develop',
-            'version' => 'dev-develop',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '54e73372312206d98e7a2b7a6ef87102a35ed47d',
+            'reference' => 'b7b08815c71d7b3aca2cfc31c377fecf7d1b08d9',
             'dev_requirement' => false,
         ),
     ),

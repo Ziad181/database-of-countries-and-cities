@@ -3,8 +3,8 @@
   "description": "This package contains a database of all countries and cities in 3 different languages: English, Arabic and French.",
   "type": "library",
   "require": {
-    "php": ">=7.4",
-    "illuminate/support": ">=7.4"
+    "php": ">=7.3",
+    "illuminate/support": ">=7.3"
   },
   "license": "MIT",
   "authors": [
