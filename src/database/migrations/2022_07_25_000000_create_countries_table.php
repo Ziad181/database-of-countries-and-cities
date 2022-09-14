@@ -19,6 +19,8 @@ class CreateCountriesTable extends Migration
             $table->string('name_en');
             $table->string('name_fr');
             $table->string('code')->unique();
+            $table->string('phone_code');
+            $table->string('currency');
         });
     }
 
